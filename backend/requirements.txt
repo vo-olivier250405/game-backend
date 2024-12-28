@@ -1,0 +1,11 @@
+python-dotenv
+psycopg2-binary
+django
+djangorestframework
+django-cors-headers
+jwt
+passlib
+django-rest-knox
+dj-database-url
+django-environ
+gunicorn
