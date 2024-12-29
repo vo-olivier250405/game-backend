@@ -14,6 +14,7 @@ class LoginView(KnoxLoginView):
     def get_user_serializer_class(self): return UserSerializer
     
     def post(self, request, format=None):
+        print("Login")
         serializer = AuthTokenSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data.get("user", None)
